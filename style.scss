@@ -14,7 +14,7 @@ body {
     background-color: #F4F4F4;
     width: 100vw;
     height: 100vh;
-    flex-grow: 1;
+    display: flex;
     padding: 60px 0;
     box-sizing: border-box;
 }
@@ -23,7 +23,7 @@ body {
     padding: 0 20px;
     box-sizing: border-box;
     width: 320px;
-    margin: 0 auto;
+    margin: auto;
     background-color: #FFF;
 }
 
@@ -170,7 +170,6 @@ select {
 @media (min-width: 1280px) {
     .outer {
         padding: 75px 80px;
-        height: 650px;
     }
 
     .inner {
@@ -202,7 +201,7 @@ select {
 
     .heathy__way-heading {
         background: #F8F8F8;
-        border-radius: 30px;
+        border-top-right-radius: 30px;
         height: 136px;
     }
 
