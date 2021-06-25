@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <title>Reduslim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plugin_country_flags/phonecode.css">
+    <script src="plugin_country_flags/jquery-1.11.0.min.js"></script>
+    <script src="plugin_country_flags/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="plugin_country_flags/counties.js"></script>
+    <script src="plugin_country_flags/phonecode.js"></script>   
+    <script>
+        $(function(){
+            $('#phone').phonecode({
+                preferCo: 'ru'
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="top"> 
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__list"><a href="#" class="menu__link">Reduslim</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link">ECO</a></li>
+                    </ul>
+                </nav>
+                <div class="full_picture">
+                    <img src="img/Ellipse_6.png" alt="ellipse" class="ellipse">
+                    <img src="img/image_2.png" alt="reduslim" class="reduslim">
+                </div>
+            </div>
+            <div class="desctop">
+                <div class="desctop__left">
+                    
+                </div>
+                <div class="healthy__way">
+                    <div class="heathy__way-heading"><h1 class="heading">Сделай шаг к выздоровлению</h1></div>
+                    
+                    <form action="#" class="form">
+                        <div class="form_order">
+                            <label for="#name" class="input__label">ВАШЕ <span class="green-label">ИМЯ</span></label>
+                            <input type="text"  class="form__input input-name" id="name" placeholder="Алексей">
+                            <label for="#phone" class="input__label">ВАШ <span class="green-label">ТЕЛЕФОН</span></label>
+                            <input type="tel" class="form__input input-phone"  id="phone" placeholder="+7 (123) 456 78-90">
+                        </div>
+                        <button type="submit" class="button__submit">Заказать<img src="img/Vector_2.svg" alt="arrow" class="arrow"></button>
+                    </form>
+                </div>
+            </div>
+            <ul class="footer__nav">
+                <li class="menu__list"><a href="#" class="menu__link footer__link">Trusted</a></li>
+                <li class="menu__list"><a href="#" class="footer__link"><img src="img/lock.svg" alt="lock"></a></li>
+                <li class="menu__list"><a href="#" class="menu__link footer__link">Secure</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
